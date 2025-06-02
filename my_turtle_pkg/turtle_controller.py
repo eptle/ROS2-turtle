@@ -41,7 +41,7 @@ class TurtleController(Node):
         elif cmd == 'BACK':
             twist.linear.x = -value
         elif cmd == 'ROT':
-            twist.angular.z = -value  # По часовой стрелке – отрицательное значение
+            twist.angular.z = -value
         else:
             self.get_logger().warn(f'Неизвестная команда: {cmd}')
 
